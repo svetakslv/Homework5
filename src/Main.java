@@ -8,9 +8,10 @@ public class Main {
         num[1] = b;
         int c = 3;
         num[2] = c;
-        System.out.println(num[0] + ", ");
-        System.out.println(num[1] + ", ");
-        System.out.println(num[2]);
+        System.out.print(num[0] + ", ");
+        System.out.print(num[1] + ", ");
+        System.out.print(num[2]);
+        System.out.println();
 
         double[] frac = new double[]{1.57, 7.654, 9.986};
         double d = 1.57;
@@ -19,9 +20,10 @@ public class Main {
         frac[1] = e;
         double f = 9.986;
         frac[2] = f;
-        System.out.println(frac[0] + ", ");
-        System.out.println(frac[1] + ", ");
-        System.out.println(frac[2]);
+        System.out.print(frac[0] + ", ");
+        System.out.print(frac[1] + ", ");
+        System.out.print(frac[2]);
+        System.out.println();
 
         int[] i = {4, 7, 2, 9};
         int g = 4;
@@ -32,10 +34,11 @@ public class Main {
         i[2] = k;
         int l = 9;
         i[3] = l;
-        System.out.println(i[0] + ", ");
-        System.out.println(i[1] + ", ");
-        System.out.println(i[2] + ", ");
-        System.out.println(i[3]);
+        System.out.print(i[0] + ", ");
+        System.out.print(i[1] + ", ");
+        System.out.print(i[2] + ", ");
+        System.out.print(i[3]);
+        System.out.println();
 
 
 
