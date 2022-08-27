@@ -14,35 +14,36 @@ public class Main {
             System.out.print(i--);
             System.out.println();
 
-            double[] frac = new double[]{1.57, 7.654, 9.986};
-            double d = 1.57;
-            frac[0] = d;
-            double e = 7.654;
-            frac[1] = e;
-            double f = 9.986;
-            frac[2] = f;
-            for (double n = frac[frac.length - 1]; n >= frac.length; n--) {
-                ///  for (double n = frac[frac.length - 1]; n >= 0; n--) {
+        double[] frac = new double[]{1.57, 7.654, 9.986};
+        double d = 1.57;
+        frac[0] = d;
+        double e = 7.654;
+        frac[1] = e;
+        double f = 9.986;
+        frac[2] = f;
+        for (int n = frac.length - 1; n >= 0; n--) {
 
-                System.out.print(n-- + ", ");
-                System.out.print(n-- + ", ");
-                System.out.print(n--);
-                System.out.println();
+             System.out.print(frac[n--] + ", ");
+             System.out.print(frac[n--]+ ", ");
+             System.out.print(frac[n--]);
+             System.out.println();
 
-                int[] q = {4, 7, 2, 9};
-                int g = 4;
-                q[0] = g;
-                int h = 7;
-                q[1] = h;
-                int k = 2;
-                q[2] = k;
-                int l = 9;
-                q[3] = l;
-                for (int t = q[q.length - 1]; t >= q.length; t--) {
-                    System.out.print(t-- + ", ");
-                    System.out.print(t-- + ", ");
-                    System.out.print(t-- + ", ");
-                    System.out.print(t--);
+        int[] q = {4, 7, 2, 9};
+        int g = 4;
+        q[0] = g;
+        int h = 7;
+        q[1] = h;
+        int k = 2;
+        q[2] = k;
+        int l = 9;
+        q[3] = l;
+
+        for (int t = q.length - 1; t >= 0; t--) {
+
+              System.out.print(q[t--] + ", ");
+              System.out.print(q[t--] + ", ");
+              System.out.print(q[t--] + ", ");
+              System.out.print(q[t--]);
 
 
                 }
