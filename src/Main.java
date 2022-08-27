@@ -8,48 +8,53 @@ public class Main {
         num[1] = b;
         int c = 3;
         num[2] = c;
-        for (int i = 3; i >= num.length; i--) {
-            System.out.print(i-- + ", ");
-            System.out.print(i-- + ", ");
-            System.out.print(i--);
-            System.out.println();
+       /// if (a % 2 != 0 && b % 2 != 0 && c % 2 != 0) {
+       ///     System.out.println(a + 1 + " ");
+       ///     System.out.println(b + 1 + " ");
+       ///     System.out.println(c + 1 + " ");
 
-        double[] frac = new double[]{1.57, 7.654, 9.986};
-        double d = 1.57;
-        frac[0] = d;
-        double e = 7.654;
-        frac[1] = e;
-        double f = 9.986;
-        frac[2] = f;
-        for (int n = frac.length - 1; n >= 0; n--) {
+            for (int i = 3; i >= num.length; i--) {
+                System.out.print(i-- + ", ");
+                System.out.print(i-- + ", ");
+                System.out.print(i--);
+                System.out.println();
 
-             System.out.print(frac[n--] + ", ");
-             System.out.print(frac[n--]+ ", ");
-             System.out.print(frac[n--]);
-             System.out.println();
+                double[] frac = new double[]{1.57, 7.654, 9.986};
+                double d = 1.57;
+                frac[0] = d;
+                double e = 7.654;
+                frac[1] = e;
+                double f = 9.986;
+                frac[2] = f;
+                for (int n = frac.length - 1; n >= 0; n--) {
 
-        int[] q = {4, 7, 2, 9};
-        int g = 4;
-        q[0] = g;
-        int h = 7;
-        q[1] = h;
-        int k = 2;
-        q[2] = k;
-        int l = 9;
-        q[3] = l;
+                    System.out.print(frac[n--] + ", ");
+                    System.out.print(frac[n--] + ", ");
+                    System.out.print(frac[n--]);
+                    System.out.println();
 
-        for (int t = q.length - 1; t >= 0; t--) {
+                    int[] q = {4, 7, 2, 9};
+                    int g = 4;
+                    q[0] = g;
+                    int h = 7;
+                    q[1] = h;
+                    int k = 2;
+                    q[2] = k;
+                    int l = 9;
+                    q[3] = l;
 
-              System.out.print(q[t--] + ", ");
-              System.out.print(q[t--] + ", ");
-              System.out.print(q[t--] + ", ");
-              System.out.print(q[t--]);
+                    for (int t = q.length - 1; t >= 0; t--) {
+
+                        System.out.print(q[t--] + ", ");
+                        System.out.print(q[t--] + ", ");
+                        System.out.print(q[t--] + ", ");
+                        System.out.print(q[t--]);
 
 
+                    }
                 }
             }
         }
     }
-}
 
 
