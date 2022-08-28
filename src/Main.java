@@ -1,43 +1,58 @@
 public class Main {
     public static void main(String[] args) {
         //Задача №1, 2, 3
-        int[] num = new int [3];
-        int a = 1;
-        num[0] = a;
-        int b = 2;
-        num[1] = b;
-        int c = 3;
-        num[2] = c;
-        System.out.println(num[0] + ", ");
-        System.out.println(num[1] + ", ");
-        System.out.println(num[2]);
+        int[] num = new int[3];
+        num[0] = 1;
+        num[1] = 2;
+        num[2] = 3;
 
-        double[] frac = new double[]{1.57, 7.654, 9.986};
-        double d = 1.57;
-        frac[0] = d ;
-        double e = 7.654;
-        frac[1] = e;
-        double f = 9.986;
-        frac[2] = f;
-        System.out.println(frac[0] + ", ");
-        System.out.println(frac[1] + ", ");
-        System.out.println(frac[2]);
+        for (int i = num.length - 1; i > 0; i--) {
+            System.out.print(num[i] + ", ");
+            if (i != num.length - 1) {
+                System.out.print(num[0]);
+                System.out.println();
 
-        int[] i = {4, 7, 2, 9};
-        int g = 4;
-        i[0] = g;
-        int h = 7;
-        i[1] = h;
-        int k = 2;
-        i[2] = k;
-        int l = 9;
-        i[3] = l;
-        System.out.println(i[0] + ", ");
-        System.out.println(i[1] + ", ");
-        System.out.println(i[2] + ", ");
-        System.out.println(i[3]);
+                double[] frac = new double[]{1.57, 7.654, 9.986};
+                frac[0] = 1.57;
+                frac[1] = 7.654;
+                frac[2] = 9.986;
+
+                for (int j = frac.length - 1; j > 0; j--) {
+                    System.out.print(frac[j] + ", ");
+                    if (j != frac.length - 1) {
+                        System.out.print(frac[0]);
+                        System.out.println();
 
 
+                        int[] q = {4, 7, 2, 9};
+                        q[0] = 4;
+                        q[1] = 7;
+                        q[2] = 2;
+                        q[3] = 9;
 
+                        for (int n = q.length - 1; n >= 0; n--) {
+                            if (n == 0) {
+                                System.out.print(q[n]);
+                            } else {
+                                System.out.print(q[n] + ", ");
+
+                            }
+                        }
+
+                    }
+                }
+
+
+                //Задача №4
+                System.out.println();
+                for (int b = 0; b < num.length; b++) {
+                    if (num[b] % 2 != 0) {
+                        num[b]++;
+                        System.out.print(num[b] + ", ");
+                    }
+                }
+            }
+        }
     }
 }
+
