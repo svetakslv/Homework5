@@ -30,27 +30,29 @@ public class Main {
                         q[2] = 2;
                         q[3] = 9;
 
-                        for (int n = q.length - 1; n > 0; n--) {
-                            System.out.print(q[n] + ", ");
-                            if (n != q.length - 1) {
-                                System.out.print(q[0]);
-                                System.out.println();
-
+                        for (int n = q.length - 1; n >= 0; n--) {
+                            if (n == 0) {
+                                System.out.print(q[n]);
+                            } else {
+                                System.out.print(q[n] + ", ");
 
                             }
                         }
+
+                    }
+                }
+
+
+                //Задача №4
+                System.out.println();
+                for (int b = 0; b < num.length; b++) {
+                    if (num[b] % 2 != 0) {
+                        num[b]++;
+                        System.out.print(num[b] + ", ");
                     }
                 }
             }
         }
-        //Задача №4
-        for (int b = 0; b < num.length; b++) {
-            if (num[b] % 2 != 0) {
-                num[b]++;
-                System.out.print(num[b] + ", ");
-            }
-        }
     }
 }
-
 
